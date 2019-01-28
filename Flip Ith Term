@@ -1,0 +1,5 @@
+(*Function that flips every pair of elements*)
+fun flip (nil) = nil
+    |flip (x::j::xs) = [j, x] @ (flip xs)
+    |flip (x::xs) = [x];;
+    
